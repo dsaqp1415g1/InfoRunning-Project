@@ -24,7 +24,7 @@ create table event (
 	eventid				int not null auto_increment primary key,
 	event					varchar(500) not null,
 	url					varchar(500) not null,
-	expire_time		datetime not null default current_timestamp,
+	expire_time		datetime not null,
 );
 
 create table comment (
@@ -34,7 +34,7 @@ create table comment (
 	newsid				int not null
 	creation_timestamp		datetime not null default current_timestamp,
 	foreign key(username) 	references users(username),
-	foreign key(newsid)	references news(newsid)
+	foreign key(newsid)		references news(newsid)
 );
 
 create table follow (

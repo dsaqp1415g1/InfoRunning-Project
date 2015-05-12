@@ -12,10 +12,10 @@ insert into user_roles values ('sergi', 'registered');
 insert into users values('carol', MD5('carol'), 'carol', 'carol@mail.com');
 insert into user_roles values ('carol', 'registered');
 
-insert into news values('1', 'Calentaminto para running', 'www.laurl.com', '');
-insert into news value('2', 'Dieta Sana', 'www.laurl2.com', '');
-insert into news values('3', 'Tacticas para correr', 'www.laurl3.com', '');
+insert into news values('1', 'Calentaminto para running', 'www.laurl.com');
+insert into news value('2', 'Dieta Sana', 'www.laurl2.com');
+insert into news values('3', 'Tacticas para correr', 'www.laurl3.com');
  
-insert into event values('1', 'Colorrun', 'www.laurl.com', '');
-insert into event values('2', 'Carrera de la Mujer', 'www.laurl.com', '');
-insert into event values('3', 'Carrera del Corte Ingles', 'www.laurl.com', '');
+insert into event values('1', 'Colorrun', 'www.laurl.com', 30/05/2015);
+insert into event values('2', 'Carrera de la Mujer', 'www.laurl.com', 05/06/2015);
+insert into event values('3', 'Carrera del Corte Ingles', 'www.laurl.com', 14/06/2015);
