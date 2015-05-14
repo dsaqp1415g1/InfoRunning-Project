@@ -10,14 +10,12 @@ create table users (
 	email		varchar(255) not null
 );
 
-
 create table news (
 	newsid				int not null auto_increment primary key,
 	new					varchar(500) not null,
 	url					varchar(500) not null,
 	creation_timestamp		datetime not null default current_timestamp
 );
-
 
 create table event (
 	eventid				int not null auto_increment primary key,
@@ -42,5 +40,3 @@ create table follow (
 	foreign key(username) 	references users(username),
 	foreign key(eventid)	references event(eventid)
 );
-
-
