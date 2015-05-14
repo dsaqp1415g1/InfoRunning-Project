@@ -7,24 +7,21 @@ create table users (
 	username	varchar(20) not null primary key,
 	password	char(32) not null,
 	name		varchar(70) not null,
-	email		varchar(255) not null,
-
+	email		varchar(255) not null
 );
-
 
 create table news (
 	newsid				int not null auto_increment primary key,
 	new					varchar(500) not null,
 	url					varchar(500) not null,
-	creation_timestamp		datetime not null default current_timestamp,
+	creation_timestamp		datetime not null default current_timestamp
 );
-
 
 create table event (
 	eventid				int not null auto_increment primary key,
 	event					varchar(500) not null,
 	url					varchar(500) not null,
-	expire_time		datetime not null,
+	expire_time		datetime not null
 );
 
 create table comment (
@@ -43,5 +40,3 @@ create table follow (
 	foreign key(username) 	references users(username),
 	foreign key(eventid)	references event(eventid)
 );
-
-
