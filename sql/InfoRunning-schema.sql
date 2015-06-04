@@ -12,14 +12,14 @@ create table users (
 
 create table news (
 	newsid				int not null auto_increment primary key,
-	new					varchar(500) not null,
+	newbody					varchar(500) not null,
 	url					varchar(500) not null,
 	creation_timestamp		datetime not null default current_timestamp
 );
 
 create table event (
 	eventid				int not null auto_increment primary key,
-	event					varchar(500) not null,
+	eventbody					varchar(500) not null,
 	url					varchar(500) not null,
 	expire_time		datetime not null
 );
